@@ -1,0 +1,55 @@
+/* global styling */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 100;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* header */
+#webname {
+    background-color: #92ad70;
+    color: #d9ff00;
+    padding: 20px;
+}
+
+/* nav section and links */
+nav a {
+    text-decoration: none;
+    /* disables underline */
+    color: #333333;
+    margin-right: 15px;
+}
+
+/* table headers */
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #92ad70;
+    color: #ffffff;
+    width: fit-content;
+}
+
+/* zerbra stripes */
+tr:nth-child(even) {
+    background-color: #cdcbcb;
+}
+
+/* form styling */
+form *{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* submit button */
+button[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+}

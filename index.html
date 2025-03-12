@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Eugene Hwang">
-    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
-    <meta name="description" content="Eugene's professional website">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Eugene Hwang" />
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems" />
+    <meta name="description" content="Eugene's professional website" />
     <title>Eugene Hwang</title>
+
+    <!-- google fonts stuff -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="./static/style.css" />
 </head>
 
-<body style="font-family: Arial">
-    <header style="color:blue; background:lightblue">
-        <h1>Eugene Hwang</h1>
+<body>
+    <header>
+        <h1 id="webname">Eugene Hwang</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="views/cv.html">CV</a>
@@ -22,17 +31,19 @@
 
     <div class="main">
         <h2>Hi, my name is Eugene</h2>
-        <img src="static/eugenephoto.jpg" alt="A photo of me" width="200" height="350">
+        <img src="static/eugenephoto.jpg" alt="A photo of me" width="200" height="350" />
         <p id="intro">
             I am a student at Carnegie Mellon University studying
             information systems. I like playing guitar and karaoke.
             I plan on doing an additional major in Artificial Intelligence.
-            My main domain of expertise is NLP, especially 
-            cross-lingual zero shot transfer learning methods :)
+            My main domain of expertise is NLP, especially cross-lingual
+            zero-shot transfer learning methods :)
         </p>
     </div>
+
     <footer>
         &copy; 2025 Eugene Hwang
     </footer>
 </body>
+
 </html>
