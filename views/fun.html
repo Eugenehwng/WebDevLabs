@@ -31,16 +31,34 @@
         </nav>
     </header>
 
-    <div class="main">
-        <h2>Things I Like to Do for Fun</h2>
-        <ul>
-            <li>Karaoke</li>
-            <li>Guitar</li>
-            <li>Machine Learning</li>
-            <li>Sleeping</li>
-        </ul>
+    <div class="mainLayout">
+        <div class="item1">
+            <h2>Things I Like to Do for Fun</h2>
+            <ul>
+                <li>Karaoke</li>
+                <li>Guitar</li>
+                <li>Machine Learning</li>
+                <li>Sleeping</li>
+            </ul>
+            <!-- <button id="SeeMoreBTN" onclick="showList()">See More</button> -->
+        </div>
+        <div class="item2">
+            <img src="../static/eugenephoto.jpg" alt="Fun Image" class="funIMG" width="200" />
+        </div>
+        <div class="item3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kTtE7Ki16eA" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; presentation" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="item4">
+            <div class="container">
+                <h2>Need Some Advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button onclick="getAdvice()">Get Advice</button>
+            </div>
+        </div>
     </div>
-
     <footer>
         &copy; 2025 Eugene Hwang :)
     </footer>

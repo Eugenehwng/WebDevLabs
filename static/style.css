@@ -53,6 +53,34 @@ input[type="submit"] {
     border-radius: 5px;
 }
 
+/* #FavList {
+    display: none;
+} */
+
+.funIMG {
+    border-radius: 100%;
+}
+
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLayout>div {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.container {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10%;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 #FavList {
     display: none;
 }

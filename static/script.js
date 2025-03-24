@@ -121,7 +121,7 @@ function addYear() {
   // Read more and less buttons
 
   // When the "Read Less" button is clicked
- $("#readLess").click(function(){ 
+$("#readLess").click(function(){ 
     $("#longIntro").hide(); // Hide the long introduction text
     $("#readLess").hide();  // Hide the "Read Less" button itself
     $("#readMore").show();  // Show the "Read More" button  
@@ -135,8 +135,8 @@ function addYear() {
     $("#readMore").hide();   // Hide the "Read More" button  
   });
 
-  // Form validation
-  function validate() {
+// Form validation
+function validate() {
     // Get the input fields and validation message element by their IDs
     var userName = document.getElementById("name");
     var userEmail = document.getElementById("email");
@@ -148,3 +148,15 @@ function addYear() {
         msg.innerHTML = "Please fill out the form correctly so I can get back to you :)";
     }
  } 
+
+function getAdvice() {
+    fetch('https://api.adviceslip.com/advice')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("adviceText").innerText = data.slip.advice;
+        })
+        .catch(error => {
+            document.getElementById("adviceText").innerText = "Error retrieving advice.";
+            console.error(error);
+        });
+}
