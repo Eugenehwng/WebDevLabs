@@ -45,11 +45,41 @@ form *{
 }
 
 /* submit button */
-button[type="submit"] {
-    background-color: #4CAF50;
+input[type="submit"] {
+    background-color: #92ad70;
+    color: white;
     border: none;
+    padding: 10px;
     border-radius: 5px;
-    color: #ffffff;
-    padding: 10px 20px;
-    cursor: pointer;
+}
+
+#FavList {
+    display: none;
+}
+
+#SeeMoreBTN {
+    background-color: lightgrey;
+    border: 0px;
+    border-radius: 16px;
+    font-size: large;
+}
+
+#shortIntro {
+    display: block;
+}
+
+#readLess,
+#longIntro {
+    display: none;
+}
+
+#readLess,
+#readMore {
+    font-style: italic;
+    background-color: lightgrey;
+}
+
+#ValidateMsg {
+    width: max-content;
+    margin: auto;
 }
